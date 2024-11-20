@@ -1,0 +1,363 @@
+body {
+    background-color: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page section.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.page section.header .logo img {
+    width: 100px;
+    margin: 10px 10px;
+}
+
+.page section.header .nav {
+    height: 50px;
+}
+
+.page section.header .nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.page section.header .nav ul li {
+    margin: 10px 10px;
+}
+
+.page section.header .nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page section.header .icon {
+    margin: 0px 10px;
+}
+
+.page section.header .icon i {
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.page section.header .icon i.toggle {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .page section.header .nav {
+        height: 50px;
+        position: absolute;
+        right: 0;
+        left: -800px;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        transition: 2s;
+        z-index: 100;
+    }
+    .page section.header .nav.active {
+        height: 50px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+    }
+    .page section.header .nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .page section.header .nav ul li {
+        margin: 10px 10px;
+        text-align: center;
+        line-height: 3;
+    }
+    .page section.header .nav ul li a {
+        color: white;
+        font-weight: bold;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .page section.header .icon {
+        margin: 0px 10px;
+    }
+    .page section.header .icon i {
+        font-size: 25px;
+        margin: 0px 10px;
+        display: none;
+    }
+    .page section.header .icon i.toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* // end headder */
+
+
+/* // start background */
+
+section div.background {
+    padding: 10px;
+    align-items: center;
+    background-image: url(img/photo_2023-10-02_18-58-51.jpg);
+    background-size: cover;
+    height: 50vh;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* end background */
+
+
+/* start small img */
+
+section.small-img {
+    padding: 20px;
+    text-align: center;
+}
+
+section.small-img .img-slider {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    position: relative;
+    /* حركة انزلاق مستمرة */
+}
+
+section.small-img .img-slider .box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 74%;
+    overflow: hidden;
+    position: relative;
+    top: -86px;
+}
+
+@media (max-width:767px) {
+    section.small-img .img-slider .box {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 94%;
+        overflow: hidden;
+        position: relative;
+        top: 40px;
+    }
+}
+
+section.small-img .img-slider img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    transition: 2s;
+    animation: slideImages 5s linear infinite;
+}
+
+@keyframes slideImages {
+    from {
+        transform: translateX(1300%);
+        /* بداية الحركة من خارج الشاشة */
+    }
+    to {
+        transform: translateX(-600%);
+        /* نهاية الحركة إلى الخارج من الجهة الأخرى */
+    }
+}
+
+
+/* end small img */
+
+
+/* start select */
+
+section.select {
+    padding: 10px;
+}
+
+section.select .continer {
+    text-align: center;
+    line-height: 2;
+}
+
+section.select .content select {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+section.select .content select.two {
+    pointer-events: none;
+}
+
+section.select .cars .row .box {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+section.select .cars .row .box .image img {
+    width: 100%;
+}
+
+section.select .cars .row .box .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.select .cars .row .box .icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.select .cars .row .box .order button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+}
+
+
+/* end select */
+
+
+/* start services */
+
+section.services {
+    background-color: #161e2c;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section.services .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+}
+
+section.services .box .image {
+    margin-right: 10px;
+}
+
+section.services .box .image img {
+    width: 100px;
+}
+
+
+/* end services */
+
+
+/* start calc */
+
+section.calc {
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+section.calc .continer .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.calc .continer .flex .box {
+    background-color: #ddd;
+    width: fit-content;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    border: solid 2px black;
+    margin: 10px 10px;
+}
+
+section.calc .continer .flex .box .image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+section.calc .continer .flex .box h4 {
+    margin: 10px 10px;
+}
+
+section.calc form textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* end calc */
+
+
+/* start post */
+
+section.post {
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 3;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+section.post .continer {
+    margin: 10px 10px;
+}
+
+
+/* end post */
+
+
+/* start footer */
+
+div.footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    padding: 10px;
+}
+
+div.footer .box img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+div.footer .box img:hover {
+    transform: scale(1.2);
+}
+
+
+/* end footer */

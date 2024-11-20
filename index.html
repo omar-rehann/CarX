@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Next</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <section class="header">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="concat.html">Concat US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-bars toggle"></i>
+            </div>
+
+        </section>
+        <section class="car">
+            <div class="background">
+                <div class="row   align-items-center  ">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="text">
+                            <h2>Experience Excellence with CarsX
+                            </h2>
+                            <p>unlock unbeatable offers on the newest models and take the wheel of your dream car today.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="image">
+                            <img src="img/cars.png" class="w-100" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="small-img">
+            <div class="img-slider">
+                <div class="box">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/feriara.png" alt="">
+                    <img src="img/mahindra-suv1293 (1).jpg" alt="">
+                    <img src="img/Tesla,_Inc.-Logo.wine.png" alt="">
+                    <img src="img/mahindra-suv1293 (1).jpg" alt="">
+
+                    <img src="img/honda.png" alt="">
+                    <img src='img/bmw-transparent-bmw-free-free-png.webp' alt="">
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="select">
+            <div class="continer">
+                <h2>Filter Cars By Make ,Model And Price Range</h2>
+                <p>Easily Search For Car Select Make , Model,Price,And Range Seatline Youe Filter Procees</p>
+            </div>
+            <div class="content">
+                <div class="row m-2">
+                    <div class="col-md-6 col-lg-6">
+                        <select name="" id="choose" onchange="update_item()">
+                            <option value="one">Model</option>
+                            <option value="two">Ferria</option>
+                            <option value="three">Kia</option>
+                            <option value="four">Honda</option>
+                            <option value="five">Tesla</option>
+                            <option value="six">BMW</option>
+                            <option value="seven">ALl</option>
+
+
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <select class="two" name="">
+                            <option value="one">Model</option>
+                            <option value="two">Ferria</option>
+                            <option value="three">Kia</option>
+                            <option value="four">Honda</option>
+                            <option value="five">Tesla</option>
+                            <option value="six">BMW</option>
+                            <option value="seven">ALl</option>
+
+
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cars">
+
+
+
+
+            </div>
+
+        </section>
+        <section class="services">
+            <div class="row">
+                <div class="col-mg-6 col-lg-4">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/customer1.png" alt="">
+
+                        </div>
+                        <div class="title">
+                            <h2>200K+</h2>
+                            <h5>Happy Customers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mg-6 col-lg-4">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/mechanic.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h2>10+</h2>
+                            <h5>Year Of Experince</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mg-6 col-lg-4">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/support.png" alt="">
+
+                        </div>
+                        <div class="title">
+                            <h2>24/7</h2>
+                            <h5>Customer Supports</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="calc">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="continer">
+                        <h4>Explore Vehice Types</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius tenetur harum magnam vel, autem aliquam odit provident eum id!</p>
+                        <div class="flex">
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/c1.webp" alt="">
+                                    <h4>Hatchbak</h4>
+                                </div>
+
+                            </div>
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/s33.webp" alt="">
+                                    <h4>Suv</h4>
+                                </div>
+
+                            </div>
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/s55.webp" alt="">
+                                    <h4>Wagon</h4>
+                                </div>
+
+                            </div>
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/fc6.png" alt="">
+                                    <h4>Coupe</h4>
+                                </div>
+
+                            </div>
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/fc7.png" alt="">
+                                    <h4>Coupe</h4>
+                                </div>
+
+                            </div>
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/fc8.png" alt="">
+                                    <h4>Suv</h4>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <form action="/action_page.php">
+                        <h3>Car EMI Calculator</h3>
+                        <div class="mb-3 mt-3">
+                            <label for="text" class="form-label">Principe Amount:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter principe Amount" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Annual Internet Rate(%):</label>
+                            <input type="text" class="form-control" id="pwd" placeholder="Enter Annual Internet Rate" name="pswd">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Tenure (In Year):</label>
+                            <input type="text" class="form-control" id="pwd" placeholder="Tenure In Year" name="pswd">
+                        </div>
+
+                        <div>
+                            <textarea name="" rows="6" placeholder="Please Enter Note" id=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark text-light">Calculate EMi</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="post">
+            <div class="continer">
+                <h4>Last Post:</h4>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="img/l2.jpg" ass="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tata New Model Laungh</h5>
+                                <p class="card-text">Last Update :2024-08-07</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="img/l3.jpg" ass="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tata New Model Laungh</h5>
+                                <p class="card-text">Last Update :2024-08-07</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="img/l4.jpg" ass="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tata New Model Laungh</h5>
+                                <p class="card-text">Last Update :2024-08-07</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box" class="one">
+                        <h2>Car X</h2>
+                        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aperiam delectus nostrum et quibusdam facere totam libero modi mollitia earum!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box">
+                        <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 1</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 2</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 3</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 4</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 5</a></li>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box">
+                        <div class="line">
+                            <p><i class="fas fa-map-marker-alt fa-fw" style="color: #0000ff;"></i>Londong,Uk, Inside The Sphinx, Room Number 220</p>
+                        </div>
+                        <div class="line">
+                            <div class="info"><i class="far fa-clock fa-fw" style=" color: blue;"></i> Business Hours: From 10:00 To 18:00</div>
+                        </div>
+                        <br>
+                        <div class="line">
+                            <div class="info">
+                                <i class="fas fa-phone-volume fa-fw" style="color: blue;"></i>
+                                <span>+20123456789</span>
+                                <span>+20198765432</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box">
+                        <img src="img/fc1.png" alt="" />
+                        <img src="img/fc2.png" alt="" />
+                        <img src="img/fc3.png" alt="" />
+                        <img src="img/fc4.png" alt="" />
+                        <img src="img/fc5.png" alt="" />
+                        <img src="img/fc6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="mian.js"></script>
+
+</body>
+
+</html>
+
+</html>
